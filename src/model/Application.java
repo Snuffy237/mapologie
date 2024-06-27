@@ -178,9 +178,9 @@ AUTRE};
 		initMap("data/region_belfort_streets.xml");
 	}
 
-	private void initMap(String xmlFile) {
+	private void initMap(String fichierXml) {
 		reseau_routier = new RoadNetwork();
-		reseau_routier.parseXml(xmlFile);
+		reseau_routier.parseXml(fichierXml);
 
 		lienCarte = DOSSIER_IMAGES + reseau_routier.getNomFichierImage();
 		System.out.println("link " + lienCarte);
